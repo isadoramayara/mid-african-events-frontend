@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <link rel="stylesheet" type="text/css" href="styles/book.css">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/f5dacd22a4.js" crossorigin="anonymous"></script>
+
+    <title>Book a consult | Mid-West African Weddings and Events</title>
+</head>
+
+<body>
+
+    <nav class="nav-container">
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="menu">
+                <label class="checkbox" for="menu">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </label>
+        </div>
+
+            <ul class="link-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+            </ul>
+
+            <a id="logo-src" href="#">
+                <img src="img/logo-1_2.png">
+            </a>
+
+            <ul class="link-list">
+                <li><a href="index.html#about">About us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+    </nav>
+
+    <header class="header-container">
+    
+    </header>
+
+    <article class="contact-form">
+        <h1>Consult a book with us!</h1>
+
+    <section class="form-container">
+
+        <form method="post" id="mailto-form">
+
+            <div class="form-info">
+                <label for="name"><h3>* Name:</h3></label>
+                <br>
+                <input type="text" id="name" name="firstname" placeholder="First Name">
+                <input type="text" id="name" name="lastname" placeholder="Last Name">
+            </div>
+
+            <div class="form-info">
+                <label for="email"><h3>* E-mail:</h3></label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="example@email.com">
+            </div>
+
+            <div class="form-info">
+                <label for="phone"><h3>Phone number:</h3></label>
+                <br>
+                <input type="tel" id="phone" name="phone" placeholder="000 000-0000">
+            </div>
+
+            <div class="form-info">
+                <label for="eventtype"><h3>* Event type:</h3></label>
+                <br>
+                <input type="radio" id="wedding" name="eventtype"> <label for="wedding"> Wedding Event</label> <br>
+                <input type="radio" id="social" name="eventtype"> <label for="social">Social Event</label> <br>
+                <input type="radio" id="corporate" name="eventtype"> <label for="corporate">Corporate Event</label> <br>
+                <input type="radio" id="nonprofit" name="eventtype"> <label for="nonprofit">Non-Profit Event</label> <br>
+                <input type="radio" id="other" name="eventtype"> <label for="other">Other</label>
+            </div>
+
+            <div class="form-info">            
+                <label for="eventdate"><h3>* Event date:</h3></label>
+                <br>
+                <input type="date" id="eventdate" name="eventdate"
+                        value="2022-01-01"
+                        min="2022-01-01" max="2040-12-31">
+            </div>
+
+            <div class="form-info">
+                <label for="city"><h3>* Event City and State:</h3></label>
+                <br>
+                <input type="text" id="city" name="city" placeholder="Ex: Chicago">
+
+                <select id="states" name="states">
+                    <option value="illinois">IL (Illinois)</option>
+                    <option value="michigan">MI (Michigan)</option>
+                    <option value="minnesota">MN (Minnesota)</option>
+                    <option value="wisconsin">WI (Wisconsin)</option>
+                    <option value="other">Other</option>
+                </select> 
+            </div>
+
+            <div class="form-info">
+                <label for="venue"><h3>Event venue (if any):</h3></label>
+                <br>
+                <input type="text" id="venue" name="venue">
+            </div>
+
+            <div class="form-info">
+                <label for="budget"><h3>* Event budget:</h3></label>
+                <br>
+                <input type="text" id="budget" name="budget">
+            </div>
+
+            <div class="form-info">
+                <label for="eventplanning"><h3>* Planning needs:</h3></label>
+                <br>
+                <textarea id="eventplanning"></textarea>
+            </div>
+            
+            <div class="form-info">
+                <label for="additional"><h3>Additional Info:</h3></label>
+                <br>
+                <textarea id="additional" placeholder="Any additional information that you think it is important for us to know."></textarea>
+            </div>
+
+            <div class="form-info">
+            <input type="submit" id="submit" name="submit" value="Submit">
+            </div>
+            
+        </form>
+
+    </section>
+
+    </article>
+
+</body>
+
+    <!-- JAVASCRIPT EVENTS -->
+    <script src="scripts/nav-interactions.js"></script>
+
+</html>

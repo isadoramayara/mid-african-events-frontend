@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background-color: #f0ece8;
+    color: #422a1e;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+h1{
+    font-family: 'Dancing Script', serif;
+    font-size: 40px;
+}
+
+hr{
+    height: 1px;
+    background-color: #90583e;
+    border: none;
+}
+
+/**** DESKTOP ****/
+
+@media screen and (min-width: 821px) {
+    .checkbox-container{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .nav-container.hidden{
+        transform: translateY(-25vh);
+    }
+
+    .nav-container{
+        width: 100vw;
+        height: 25vh;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border-bottom: 4px solid #b54123;
+        border-image: linear-gradient(90deg, rgba(60,12,86,0) 0%, rgba(227,166,137,0.5049370089832808) 50%, rgba(30,4,66,0) 100%);
+        border-image-slice: 1;
+        position: fixed;
+        display: inline-flex;
+        justify-content: center;
+        font-weight: 700;
+        z-index: 2000;
+        background-color: rgba(240, 236, 232, 0.85);
+        transition: .5s ease-in-out;
+    }
+
+    .link-list{
+        padding: 0;
+        margin: auto 0;
+        text-align: center;
+    }
+        .link-list li{
+            margin: 20px;
+            text-transform: uppercase;
+            list-style: none;
+            display: inline;
+        }
+        .link-list a{
+            text-decoration: none;
+            color: #422a1e;
+            transition: 0.5s ease-in-out;
+        }
+        .link-list a:hover{
+            color: #b54123;
+            font-weight: bolder;
+        }
+
+    #logo-src{
+        max-width: 100%;
+        overflow-y: hidden;
+        height: auto;
+    }
+}
+
+/**** MOBILE ****/
+
+@media screen and (max-width: 820px) {
+    #logo-src{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .nav-container{
+        width: 100vw;
+        height: 10vh;
+        background-color: #f0ece8;
+        background-image: url("../img/logo-1_1.png");
+        background-repeat: no-repeat;
+        background-position: 50% .5vh;
+        background-size: 16vh;
+        border-bottom: 2px solid #b54123;
+        position: fixed;
+        transition: .5s ease-in-out;
+        overflow-y: hidden;
+        z-index: 2000;
+    }
+        .nav-container a{
+            min-height: 100%;
+            min-width: 20%;
+        }
+
+    .nav-container.active{
+        height: 100vh;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        background-color: rgba(240, 236, 232, 0.9);
+    }
+
+    .checkbox-container{
+        float: right;
+        margin-top: 3vh;
+        margin-right: 7vw;
+    }
+        .checkbox-container label{
+            font-size: 8vw;
+            cursor: pointer;
+        }
+
+    .link-list{
+        text-transform: uppercase;
+        display: list-item;
+        font-size: 25px;
+        text-align: center;
+        position: relative;
+        padding: 0;
+    }
+        .link-list li{
+            list-style: none;
+            margin: 10%;
+        }
+        .link-list a{
+            text-decoration: none;
+            color: #422a1e;
+            transition: 0.5s ease-in-out;
+        }
+        .link-list a:hover{
+            color: #b54123;
+            font-weight: bolder;
+        }
+        .link-list:nth-of-type(1){
+            margin-top: 20vh;
+            margin-bottom: 0;
+        }
+        .link-list:nth-of-type(2){
+            margin-top: 0;
+        }
+        
+    }
+    

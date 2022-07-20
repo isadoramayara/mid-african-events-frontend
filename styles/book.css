@@ -1,0 +1,90 @@
+.header-container{
+    background-color: aliceblue;
+    background-image: url("../img/consult_bg.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 85vh;
+}
+
+.contact-form{
+    background-color: #f1e7da;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 2% 5%;
+}
+    .contact-form h1{
+        text-align: center;
+    }
+    .contact-form h3{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    
+.form-container{
+    width: 50%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 500px) {
+    .form-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+    .form-container div{
+        margin: 4%;
+    }
+    .form-container input, select, textarea{
+        font-size: 15px;
+        padding: 10px;
+        background-color: #FCF6EE;
+        border: 2px solid #DFD5C9;
+        border-radius: 2px;
+        color: #422a1e;
+        font-family: 'Nanum Myeongjo', serif;
+        font-weight: 700;
+    }
+    .form-container textarea{
+        width: 100%;
+        height: 125px;
+        resize: vertical;
+    }
+    #name{
+        padding: 10px;
+        width: 49.5%;
+    }
+    #name:nth-of-type(2){
+        float: right;
+    }
+    #city{
+        font-size: 15px;
+        width: 75%;
+        padding: 10px;
+    }
+    #states{
+        font-size: 15px;
+        padding: 10px;
+        width: 24%;
+        float: right;
+    }
+    #email,#phone, #venue, #budget, #eventplanning, #additional{
+        width: 100%;
+    }
+
+    #submit{
+        display: flex;
+        margin: 0 auto;
+        background-color: #d57038;
+        color: #f0ece8;
+        padding: 1rem 2rem;
+        width: auto;
+        transition: .3s ease-in-out;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+    }
+        #submit:hover{
+            background-color: #e3a689;
+        }
+    
+
